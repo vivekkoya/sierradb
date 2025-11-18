@@ -48,9 +48,6 @@ docker run -p 9090:9090 -v ./data:/app/data tqwewe/sierradb
 
 ### Install with Cargo
 ```bash
-# Setup toolchain to use nightly feature
-rustup toolchain install nightly
-rustup override set nightly
 cargo install sierradb-server
 sierradb --dir ./data --client-address 0.0.0.0:9090
 ```
